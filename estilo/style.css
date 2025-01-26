@@ -19,15 +19,40 @@ header {
   background-color:gray;
   color: white;
   padding: 0.5em;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  text-align: center;
 }
 
 header h1 {
   border: 1px dotted black;
+  flex: 0 0 200px;
 
 }
 
 header nav {
   border: 1px dotted black;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:flex-end;
+}
+
+header nav a {
+  background-color:brown;
+  color: white;
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius:5px;
+  text-align: center;
+}
+
+header nav a:hover {
+  background-color:rgb(146, 112, 112);
+  color: black;
+  transition: background-color .5s;
 }
 
 
